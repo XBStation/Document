@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Option 2: DIY with UBEC - XBStation Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Option 2: DIY with UBEC";
+    var mkdocs_page_input_path = "installation/hardware/diy-ubec.md";
+    var mkdocs_page_url = "/installation/hardware/diy-ubec/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../../introduction/" class="icon icon-home"> XBStation Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../introduction/">Introduction</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Installation</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <span class="caption-text">Setup Hardware</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../stable-power-module/">Option 1: Setup with XBStation Module</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">Option 2: DIY with UBEC</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#materials">Materials</a></li>
+    
+
+    <li class="toctree-l4"><a href="#connection">Connection</a></li>
+    
+
+    <li class="toctree-l4"><a href="#configuring-pixhawk-autopilot">Configuring Pixhawk Autopilot</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Setup Companion Computer</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../companion-computer/flashing-sd-card/">Option 1: Flashing SD Card (Recommended)</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../companion-computer/package-installing/">Option 2: Installing Package</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Setup Ground Stations</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../ground-stations/download-software/">Download and Login Software</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../ground-stations/setting/">Setting XBStation Thirdparty</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../ground-stations/qgroundcontrol/">QGroundControl</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../ground-stations/missionplanner/">MissionPlanner</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../time-line/">TimeLine</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../introduction/">XBStation Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../introduction/">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Installation &raquo;</li>
+        
+      
+        
+          <li>Setup Hardware &raquo;</li>
+        
+      
+    
+    <li>Option 2: DIY with UBEC</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="materials">Materials<a class="headerlink" href="#materials" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Companion computer: Rasp Pi 3 B/3 B+, Rasp Pi 4</li>
+<li>Flight controller: Pixhawk, Cube, Pixhawk 4...</li>
+<li>Micro SD card: Minium 8 GB, and Class 10</li>
+<li>Camera: Pi Cam V1, Pi Cam V2, Logitech camera ( C270, C310, C510, C720, C920 etc...) and others CSI, USB camera.</li>
+<li>D-Com or Wifi usb devices: E3372 (Tested) or others (autoconnect are recommended)</li>
+<li>UBEC: HobbyKing™ HKU5 5V/5A UBEC or more, you must minium 5V-3A</li>
+<li>Direct Cable or USB USART for connecting ( companion computer - flight controller )</li>
+</ul>
+<p><strong>With Rasp Pi 3 B/3 B+, Rasp Pi 4 you have many option for build:</strong></p>
+<ul>
+<li>Connect Rasp Pi to Pixhawk via Direct Cable or USB USART</li>
+<li>Choose USB camera or CSI camera</li>
+<li></li>
+</ul>
+<h1 id="connection">Connection<a class="headerlink" href="#connection" title="Permanent link">&para;</a></h1>
+<p><img alt="enter image description here" src="https://imgur.com/3GTP11T.png" /></p>
+<p>For connect Pi to Pixhawk, you have 2 method</p>
+<p><strong>1. Method Direct Cable: Connect the Pixhawk’s TELEM2 port to the RPi’s Ground, TX and RX pins as shown in the image</strong></p>
+<p><span style="color:red">Do not connect VCC-Pixhawk to 5V-RaspPi</span></p>
+<p><img alt="enter image description here" src="https://imgur.com/OF964o0.png" /></p>
+<p><strong>2. Method USB USART( CP2102, PL2303 or others ): Connect the Pixhawk’s TELEM2 port to the USB USART’s Ground, TX and RX pins as shown in the image</strong></p>
+<p><span style="color:red">Do not connect VCC-Pixhawk to 5V-USB USART<span></p>
+<p><img alt="enter image description here" src="https://imgur.com/lwy2Ul7.png" /></p>
+<h1 id="configuring-pixhawk-autopilot">Configuring Pixhawk Autopilot<a class="headerlink" href="#configuring-pixhawk-autopilot" title="Permanent link">&para;</a></h1>
+<p>The baudrate on companion computer must same the baudrate (telemery2) on Pixhawk</p>
+<p>Turn on Ground Control Station ( Qgroundcontrol or Mission Planner) and set params:</p>
+<ul>
+<li>With PX4: SER_TEL2_BAUD (Default 921600), you should change 57600 for stable and save data</li>
+<li>With ArduPilot: SERIAL2_BAUD (Default 57, it means 57600), SERIAL2_PROTOCOL: 2 (MAVLink 2)</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../companion-computer/flashing-sd-card/" class="btn btn-neutral float-right" title="Option 1: Flashing SD Card (Recommended)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../stable-power-module/" class="btn btn-neutral" title="Option 1: Setup with XBStation Module"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../stable-power-module/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../companion-computer/flashing-sd-card/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+
+</body>
+</html>

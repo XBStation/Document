@@ -1,0 +1,37 @@
+site_name: XBStation Docs
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+pages:
+  - Introduction: 'introduction.md'
+  - Installation:
+    - 'Setup Hardware':
+      - 'Option 1: Setup with XBStation Module': 'installation/hardware/stable-power-module.md'
+      - 'Option 2: DIY with UBEC': 'installation/hardware/diy-ubec.md'
+    - 'Setup Companion Computer': 
+      - 'Option 1: Flashing SD Card (Recommended)': 'installation/companion-computer/flashing-sd-card.md'
+      - 'Option 2: Installing Package': 'installation/companion-computer/package-installing.md'
+    - 'Setup Ground Stations':
+      - 'Download and Login Software': 'installation/ground-stations/download-software.md' 
+      - 'Setting XBStation Thirdparty': 'installation/ground-stations/setting.md'
+      - 'QGroundControl': 'installation/ground-stations/qgroundcontrol.md'
+      - 'MissionPlanner': 'installation/ground-stations/missionplanner.md'
+  - TimeLine: 'time-line.md'
+  - Ardusub:
+    - 'Setup Companion Computer': 'setup-companion-computer.md'
+  - 'Sky Data Link':
+    - 'Features':
+      - 'Log file': 'sky-data-link/features/log-file.md'
+      - 'Info and Status': 'sky-data-link/features/info-and-status.md'
+      - 'Settings': 'sky-data-link/features/settings.md'
+      - 'Simulator': 'features/sitl-simulator.md'
+      - 'Installation':
+        - 'Flashing image': 'sky-data-link/installation/flashing-image.md'
+theme: readthedocs

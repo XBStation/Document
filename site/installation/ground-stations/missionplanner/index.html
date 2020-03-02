@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>MissionPlanner - XBStation Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "MissionPlanner";
+    var mkdocs_page_input_path = "installation/ground-stations/missionplanner.md";
+    var mkdocs_page_url = "/installation/ground-stations/missionplanner/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../../introduction/" class="icon icon-home"> XBStation Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../introduction/">Introduction</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Installation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <span class="caption-text">Setup Hardware</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../hardware/stable-power-module/">Option 1: Setup with XBStation Module</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../hardware/diy-ubec/">Option 2: DIY with UBEC</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Setup Companion Computer</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../companion-computer/flashing-sd-card/">Option 1: Flashing SD Card (Recommended)</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../companion-computer/package-installing/">Option 2: Installing Package</a>
+                </li>
+    </ul>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">Setup Ground Stations</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../download-software/">Download and Login Software</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../setting/">Setting XBStation Thirdparty</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../qgroundcontrol/">QGroundControl</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">MissionPlanner</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#connect-to-telemetry-data">Connect to Telemetry data</a></li>
+    
+
+    <li class="toctree-l4"><a href="#connect-to-video-streaming">Connect to Video Streaming</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../time-line/">TimeLine</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../introduction/">XBStation Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../introduction/">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Installation &raquo;</li>
+        
+      
+        
+          <li>Setup Ground Stations &raquo;</li>
+        
+      
+    
+    <li>MissionPlanner</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="connect-to-telemetry-data">Connect to Telemetry data<a class="headerlink" href="#connect-to-telemetry-data" title="Permanent link">&para;</a></h1>
+<p>At the top-right, choose TCP type</p>
+<p><img alt="" src="https://i.imgur.com/95i9EjO.png" /></p>
+<ul>
+<li>Host name/ip: 127.0.0.1 (default)</li>
+<li>Remote port: 5760 (default)</li>
+</ul>
+<h1 id="connect-to-video-streaming">Connect to Video Streaming<a class="headerlink" href="#connect-to-video-streaming" title="Permanent link">&para;</a></h1>
+<p>At the Video HUD area, Right Click -&gt; Video -&gt; Set GStreamer source -&gt; input GStreamer URL:</p>
+<p><code>udpsrc port=5601 caps = "application/x-rtp, media=video, clock-rate=90000, encoding-name=H264, payload=96" ! rtpjitterbuffer ! rtph264depay ! avdec_h264 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink</code></p>
+<p><strong>NOTE:</strong> The GStreamer URL just need to input at the first time, MissionPlanner will auto save this params, the next run with MissionPlanner, you just Right Click -&gt; Video -&gt; Set GStreamer source -&gt; and click OK to use video streaming</p>
+<p><img alt="" src="https://i.imgur.com/kFRpzS9.png" /></p>
+<p><strong>NOTE:</strong> Download and install the plugin (domestic environment download is slow, if it fails, please restart the MissionPlanner ground station and try again)</p>
+<p><img alt="" src="https://i.imgur.com/RurZ4jz.png" /></p>
+<p>After the installation is complete, restart the MissionPlanner ground station to display the following interface.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../../time-line/" class="btn btn-neutral float-right" title="TimeLine">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../qgroundcontrol/" class="btn btn-neutral" title="QGroundControl"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../qgroundcontrol/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../../time-line/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+
+</body>
+</html>

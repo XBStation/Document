@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Option 2: Installing Package - XBStation Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Option 2: Installing Package";
+    var mkdocs_page_input_path = "installation/companion-computer/package-installing.md";
+    var mkdocs_page_url = "/installation/companion-computer/package-installing/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../../introduction/" class="icon icon-home"> XBStation Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../introduction/">Introduction</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Installation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <span class="caption-text">Setup Hardware</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../hardware/stable-power-module/">Option 1: Setup with XBStation Module</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../hardware/diy-ubec/">Option 2: DIY with UBEC</a>
+                </li>
+    </ul>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">Setup Companion Computer</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../flashing-sd-card/">Option 1: Flashing SD Card (Recommended)</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">Option 2: Installing Package</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#installing">Installing</a></li>
+    
+
+    <li class="toctree-l4"><a href="#login">Login</a></li>
+    
+
+    <li class="toctree-l4"><a href="#checking-status">Checking status</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Setup Ground Stations</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../ground-stations/download-software/">Download and Login Software</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../ground-stations/setting/">Setting XBStation Thirdparty</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../ground-stations/qgroundcontrol/">QGroundControl</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../ground-stations/missionplanner/">MissionPlanner</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../time-line/">TimeLine</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../introduction/">XBStation Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../introduction/">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Installation &raquo;</li>
+        
+      
+        
+          <li>Setup Companion Computer &raquo;</li>
+        
+      
+    
+    <li>Option 2: Installing Package</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>XBFirm is a set of softwares base on Linux making an platform for live streaming and control telemetry data.</p>
+<p><strong>You can control Raspberry Pi via SSH</strong>  <a href="http://www.hobbytronics.co.uk/raspberry-pi-ssh">http://www.hobbytronics.co.uk/raspberry-pi-ssh</a>  or <strong>HDMI screen</strong></p>
+<ul>
+<li>
+<p>Username: pi</p>
+</li>
+<li>
+<p>Password: raspberry</p>
+</li>
+</ul>
+<p><strong>OS supported:</strong></p>
+<ul>
+<li>Debian Stretch Lite</li>
+<li>Debian Stretch With Desktop</li>
+<li>Debian Buster Lite</li>
+<li>Debian Buster With Desktop</li>
+</ul>
+<h1 id="installing">Installing<a class="headerlink" href="#installing" title="Permanent link">&para;</a></h1>
+<div style="text-align: center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wLchgH3gqCo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+<ul>
+<li>
+<p>Open Raspberry Pi terminal</p>
+</li>
+<li>
+<p>Install wget</p>
+<div class="codehilite"><pre><span></span>sudo apt-get install wget
+</pre></div>
+
+
+</li>
+<li>
+<p>Download setup file</p>
+<ul>
+<li>
+<p>With <strong>Debian Buster Lite</strong> or <strong>Debian Buster</strong> With Desktop</p>
+<p><code>wget https://download.xb-uav.com/debian-buster/setup.sh</code></p>
+</li>
+<li>
+<p>With <strong>Debian Stretch Lite</strong> or <strong>Debian Stretch</strong> With Desktop</p>
+<p><code>wget https://download.xb-uav.com/debian-stretch/setup.sh</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Change the access permissions</p>
+<div class="codehilite"><pre><span></span>sudo chmod +x setup.sh
+</pre></div>
+
+
+</li>
+<li>
+<p>Run setup.sh file</p>
+<div class="codehilite"><pre><span></span>sudo ./setup.sh
+</pre></div>
+
+
+</li>
+</ul>
+<p><em>The installation time is approx 10 minutes - 15 minutes.</em></p>
+<h1 id="login">Login<a class="headerlink" href="#login" title="Permanent link">&para;</a></h1>
+<p>If you don't have account, Click  <a href="https://product.xb-uav.com/customer/register">here</a>  to register free 1 month account</p>
+<ul>
+<li>When the installation is complete, Type "1" to choose "Login" option</li>
+</ul>
+<p><img alt="enter image description here" src="https://i.imgur.com/WpZZsiQ.png" /></p>
+<ul>
+<li>Then type "4" to reboot your Raspberry Pi, and the software will be auto start. You need to wait about 60s for preparing</li>
+</ul>
+<p><img alt="enter image description here" src="https://i.imgur.com/fSRbOOr.png" /></p>
+<h1 id="checking-status">Checking status<a class="headerlink" href="#checking-status" title="Permanent link">&para;</a></h1>
+<p>After login and reboot, XBFirm will be run automatically. To make sure the software on Companion Computer work, you can check XBFirm status by type this command:</p>
+<div class="codehilite"><pre><span></span>    sudo xbstation status
+</pre></div>
+
+
+<p>For more xbstation command line interface, please refer this link: <a href="https://xb-uav.com/news/7">xbstation command lines</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../ground-stations/download-software/" class="btn btn-neutral float-right" title="Download and Login Software">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../flashing-sd-card/" class="btn btn-neutral" title="Option 1: Flashing SD Card (Recommended)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../flashing-sd-card/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../ground-stations/download-software/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+
+</body>
+</html>
