@@ -1,6 +1,6 @@
 
   
-**XBStation Ready To Fly Kit** 
+**XBSTATION 4G LTE BVLOS Kit** 
 
 ![4G LTE drone kit streaming Ardupilot BVLOS](https://imgur.com/Lv9uyDO.png)	
 
@@ -11,12 +11,13 @@ XBStation Kit is a plug and play hardware to transmites drone data and videos to
 ### Features
 - **Reliable connection, cloud connectivity, reconnect automatically when the network is lost**
 - HD video streaming
-- Automatic APN connection
+- Automatic APN detection
+- Telemetry command and control
 - Video/telemetry Streaming sharing to the viewer's browser
 - Gimbal control from pilot/consumers
 - AES 256 data encrytion
 - Multiple vehicles control
-- Cellular informations, RSSI (Received signal strength indication), system monitoring
+- Cellular RSSI (Received signal strength indication), system monitoring
 - Adapt to all carriers and bands
 - H264 video encoding
 - Supported platforms: Android, Windows, MacOS
